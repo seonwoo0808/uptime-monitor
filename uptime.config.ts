@@ -63,6 +63,22 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
+    {
+      id: 'ptg_portainer',
+      name: 'portainer.ptg.kr',
+      method: 'GET',
+      target: 'https://portainer.ptg.kr',
+      statusPageLink: 'https://portainer.ptg.kr',
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'reverse_proxy',
+      name: 'Reverse Proxy',
+      method: 'TCP_PING',
+      target: 'ddns.ptg.kr:443',
+      timeout: 5000,
+    },
   ],
 }
 
