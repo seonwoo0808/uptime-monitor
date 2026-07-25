@@ -72,13 +72,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
-    {
-      id: 'reverse_proxy',
-      name: 'Reverse Proxy',
-      method: 'TCP_PING',
-      target: 'ddns.ptg.kr:443',
-      timeout: 5000,
-    },
   ],
 }
 
